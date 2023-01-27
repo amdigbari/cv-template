@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: "Inter", Arial, Helvetica, "Noto Sans Devanagari",
+        "Noto Sans CJK SC Thin", "Noto Sans SC", "Noto Sans Hebrew", sans-serif;
+    background-color: #ddd;
+}
+
+h1 {
+    font-size: 34px;
+    line-height: 1;
+    color: #323232;
+    margin: 0;
+    font-family: "Rubik", Arial, Helvetica, "Noto Sans Devanagari",
+        "Noto Sans CJK SC Thin", "Noto Sans SC", "Noto Sans Hebrew", sans-serif;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 0;
+    line-height: 21px;
+    color: #1ab0b3;
+    font-weight: normal;
+    font-family: "Rubik", Arial, Helvetica, "Noto Sans Devanagari",
+        "Noto Sans CJK SC Thin", "Noto Sans SC", "Noto Sans Hebrew", sans-serif;
+}
+
+h4 {
+    font-size: 15px;
+    line-height: 18px;
+    color: #1ab0b3;
+    margin: 0;
+    font-weight: normal;
+    font-family: "Rubik", Arial, Helvetica, "Noto Sans Devanagari",
+        "Noto Sans CJK SC Thin", "Noto Sans SC", "Noto Sans Hebrew", sans-serif;
+}
+
+h6 {
+    font-size: 14px;
+    line-height: 17px;
+    color: #65696d;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+    font-family: "Rubik", Arial, Helvetica, "Noto Sans Devanagari",
+        "Noto Sans CJK SC Thin", "Noto Sans SC", "Noto Sans Hebrew", sans-serif;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    line-height: 16px;
+    color: #323232;
+}
+
+span {
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0;
+    color: #60696c;
+}
+
+.container {
+    width: 100%;
+    padding: 60px;
+    margin: 0;
+    margin: 60px auto;
+    max-width: 940px;
+    background-color: white;
+}
+
+.icon {
+    color: #b9b9b9;
+    margin-right: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #384346;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0;
+    color: #60696c;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header__profile {
+    flex: 1;
+}
+
+.header__profile_contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.header__profile_contact__item {
+    display: flex;
+    align-items: center;
+}
+
+.header__profile_contact__item:not(:last-child) {
+    margin-right: 12px;
+}
+
+.header__avatar {
+    margin-left: 30px;
+    object-fit: contain;
+    border-radius: 9999px;
+    width: 108px;
+    height: 108px;
+}
+
+.main {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr 40%;
+    column-gap: 12px;
+}
+
+.main > div {
+    padding: 0 12px;
+}
+
+.section {
+}
+
+.section__title {
+    border-bottom: 1px solid #999;
+    padding-bottom: 1px;
+    margin-bottom: 10px;
+    margin-top: 16px;
+}
+
+.summary {
+    text-align: left;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.experience h3 {
+    color: #323232;
+}
+
+.experience__details {
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 3px;
+}
+
+.experience__details_company {
+    text-align: left;
+}
+
+.experience_company-description {
+    margin-top: 6px;
+    font-size: 12px;
+}
+
+ul {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 24px;
+    list-style: none;
+    padding: 0;
+}
+
+ul > div {
+    display: flex;
+    align-items: flex-start;
+}
+
+ul > div > i {
+    color: #1ab0b3 !important;
+}
+
+li {
+    font-size: 13px;
+    line-height: 15px;
+    margin: 0;
+    margin-bottom: 6px;
+}
+
+.skills {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+
+.skills span {
+    display: block;
+    padding: 4px 8px;
+    border-bottom: 1px solid #a9a9a9;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 10px;
+}
+
+.achievements > div {
+    padding: 6px 0;
+    display: flex;
+    align-items: center;
+}
+
+.achievements > div .diamond {
+    width: 40px;
+    height: 40px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.achievements > div .diamond > i {
+    width: 16px;
+    height: 16px;
+    color: #1ab0b3;
+    margin-top: -3px;
+}
+
+.achievements > div h4 {
+    color: #323232;
+}
+
+.language {
+    margin-bottom: 12px;
+}
+
+.language .detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+.language .detail span {
+    color: #323232;
+}
+
+.language .line-bar {
+    height: 6px;
+    border-radius: 3px;
+    background-color: #e4e4e4;
+    overflow: hidden;
+}
+
+.language .line-bar > div {
+    height: 100%;
+    border-radius: 3px;
+    background-color: #323232;
+}
+
+@media print {
+    body {
+        background-color: white;
+    }
+    body * {
+        visibility: hidden;
+    }
+    .container,
+    .container * {
+        visibility: visible;
+    }
+    .container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: 0;
+    }
+}
