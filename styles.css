@@ -1,3 +1,12 @@
+:root {
+    --text-color: #323232;
+    --text-gray-color: #60696c;
+    --text-gray-light-color: #65696d;
+    --background-color: #f2f2f2;
+    --primary-color: #1ab0b3;
+    --icon-color: #b9b9b9;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -8,13 +17,13 @@ body {
     overflow-x: hidden;
     font-family: "Inter", Arial, Helvetica, "Noto Sans Devanagari",
         "Noto Sans CJK SC Thin", "Noto Sans SC", "Noto Sans Hebrew", sans-serif;
-    background-color: #ddd;
+    background-color: var(--background-color);
 }
 
 h1 {
     font-size: 34px;
     line-height: 1;
-    color: #323232;
+    color: var(--text-color);
     margin: 0;
     font-family: "Rubik", Arial, Helvetica, "Noto Sans Devanagari",
         "Noto Sans CJK SC Thin", "Noto Sans SC", "Noto Sans Hebrew", sans-serif;
@@ -24,7 +33,7 @@ h3 {
     font-size: 18px;
     margin: 0;
     line-height: 21px;
-    color: #1ab0b3;
+    color: var(--primary-color);
     font-weight: normal;
     font-family: "Rubik", Arial, Helvetica, "Noto Sans Devanagari",
         "Noto Sans CJK SC Thin", "Noto Sans SC", "Noto Sans Hebrew", sans-serif;
@@ -33,7 +42,7 @@ h3 {
 h4 {
     font-size: 15px;
     line-height: 18px;
-    color: #1ab0b3;
+    color: var(--primary-color);
     margin: 0;
     font-weight: normal;
     font-family: "Rubik", Arial, Helvetica, "Noto Sans Devanagari",
@@ -43,7 +52,7 @@ h4 {
 h6 {
     font-size: 14px;
     line-height: 17px;
-    color: #65696d;
+    color: var(--text-gray-light-color);
     text-transform: uppercase;
     padding: 0;
     margin: 0;
@@ -57,14 +66,14 @@ p {
     padding: 0;
     font-size: 13px;
     line-height: 16px;
-    color: #323232;
+    color: var(--text-color);
 }
 
 span {
     font-size: 12px;
     line-height: 15px;
     margin: 0;
-    color: #60696c;
+    color: var(--text-gray-color);
 }
 
 .container {
@@ -77,17 +86,18 @@ span {
 }
 
 .icon {
-    color: #b9b9b9;
-    margin-right: 5px;
+    color: var(--icon-color);
+    margin-right: 2px;
+    width: 16px;
+    height: 16px;
 }
 
 a {
     text-decoration: none;
-    color: #384346;
     font-size: 12px;
     line-height: 15px;
     margin: 0;
-    color: #60696c;
+    color: var(--text-gray-color);
 }
 
 .header {
@@ -113,7 +123,7 @@ a {
 }
 
 .header__profile_contact__item:not(:last-child) {
-    margin-right: 12px;
+    margin-right: 16px;
 }
 
 .header__avatar {
@@ -135,11 +145,8 @@ a {
     padding: 0 12px;
 }
 
-.section {
-}
-
 .section__title {
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid var(--icon-color);
     padding-bottom: 1px;
     margin-bottom: 10px;
     margin-top: 16px;
@@ -152,7 +159,7 @@ a {
 }
 
 .experience h3 {
-    color: #323232;
+    color: var(--text-color);
 }
 
 .experience__details {
@@ -187,7 +194,7 @@ ul > div {
 }
 
 ul > div > i {
-    color: #1ab0b3 !important;
+    color: var(--primary-color) !important;
 }
 
 li {
@@ -207,10 +214,11 @@ li {
 .skills span {
     display: block;
     padding: 4px 8px;
-    border-bottom: 1px solid #a9a9a9;
+    border-bottom: 1px solid var(--icon-color);
     font-size: 14px;
     line-height: 16px;
     margin-bottom: 10px;
+    color: var(--text-color);
 }
 
 .achievements > div {
@@ -222,7 +230,7 @@ li {
 .achievements > div .diamond {
     width: 40px;
     height: 40px;
-    background-color: #f2f2f2;
+    background-color: var(--background-color);
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -233,12 +241,12 @@ li {
 .achievements > div .diamond > i {
     width: 16px;
     height: 16px;
-    color: #1ab0b3;
+    color: var(--primary-color);
     margin-top: -3px;
 }
 
 .achievements > div h4 {
-    color: #323232;
+    color: var(--text-color);
 }
 
 .language {
@@ -254,20 +262,20 @@ li {
 }
 
 .language .detail span {
-    color: #323232;
+    color: var(--text-color);
 }
 
 .language .line-bar {
     height: 6px;
     border-radius: 3px;
-    background-color: #e4e4e4;
+    background-color: var(--background-color);
     overflow: hidden;
 }
 
 .language .line-bar > div {
     height: 100%;
     border-radius: 3px;
-    background-color: #323232;
+    background-color: var(--text-color);
 }
 
 @media print {
